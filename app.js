@@ -1,6 +1,8 @@
 // Aquí tu código
 
-
+document.addEventListener("click", function(e) {
+  drawCross(e.pageX, e.pageY);
+});
 
 
 // No modificar a partir de aquí
@@ -26,6 +28,3 @@ function drawCross(x, y) {
   line2.style.top = y + "px";
   document.body.appendChild(line2);
 }
-document.addEventListener("click", function(e) {
-  drawCross(e.pageX, e.pageY);
-});

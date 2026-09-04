@@ -1,8 +1,12 @@
 // Aquí tu código
+let map = document.querySelector(".map");
 
-document.addEventListener("click", function(e) {
-  drawCross(e.pageX, e.pageY);
+map.addEventListener("click", function (event) {
+  //2. En el objeto event tenemos dos propeidades interesantes: las coordenadas X e Y donde hemos hecho click.
+  drawCross(event.pageX, event.pageY);
+  
 });
+
 
 
 // No modificar a partir de aquí
